@@ -126,7 +126,7 @@
         <!-- A) CORPORATIVO — cover: assets/images/corporativo/cover.jpg -->
         <article class="segment-card reveal">
           <div class="segment-bg">
-            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80" alt="Producción audiovisual corporativa y comercial" loading="lazy" />
+            <img data-cover="corporativo" src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80" alt="Producción audiovisual corporativa y comercial" loading="lazy" />
             <div class="segment-overlay"></div>
           </div>
 
@@ -139,13 +139,13 @@
             <p data-i18n="corp_card_desc">Contenido audiovisual estratégico para empresas, marcas, restaurantes, desarrollos inmobiliarios y campañas digitales.</p>
 
             <div class="chip-list">
-              <a href="institucionales" class="chip" data-i18n="cat_inst">Institucionales</a>
-              <a href="comerciales" class="chip" data-i18n="cat_comm">Comerciales</a>
-              <a href="reels-verticales" class="chip" data-i18n="cat_reels">Reels Verticales</a>
-              <a href="motion-graphics" class="chip">Motion Graphics</a>
-              <a href="drone" class="chip" data-i18n="cat_drone">Dron</a>
-              <a href="inmobiliaria" class="chip" data-i18n="cat_real">Inmobiliaria</a>
-              <a href="fotografia-producto" class="chip" data-i18n="cat_prod">Fotografía de Producto</a>
+              <a href="corporativo#institucionales" class="chip" data-i18n="cat_inst">Institucionales</a>
+              <a href="corporativo#comerciales" class="chip" data-i18n="cat_comm">Comerciales</a>
+              <a href="corporativo#reels-verticales" class="chip" data-i18n="cat_reels">Reels Verticales</a>
+              <a href="corporativo#motion-graphics" class="chip">Motion Graphics</a>
+              <a href="corporativo#drone" class="chip" data-i18n="cat_drone">Dron</a>
+              <a href="corporativo#inmobiliaria" class="chip" data-i18n="cat_real">Inmobiliaria</a>
+              <a href="corporativo#fotografia-producto" class="chip" data-i18n="cat_prod">Fotografía de Producto</a>
             </div>
 
             <a href="corporativo" class="btn btn-primary" data-i18n="corp_btn">Ver portafolio corporativo</a>
@@ -155,7 +155,7 @@
         <!-- B) SOCIALES — cover: assets/images/sociales/cover.jpg -->
         <article class="segment-card reveal">
           <div class="segment-bg">
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" alt="Fotografía y video cinematográfico de bodas y eventos sociales" loading="lazy" />
+            <img data-cover="sociales" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" alt="Fotografía y video cinematográfico de bodas y eventos sociales" loading="lazy" />
             <div class="segment-overlay"></div>
           </div>
 
@@ -168,13 +168,13 @@
             <p data-i18n="soc_card_desc">Cobertura cinematográfica en video y fotografía para bodas, 15 años y celebraciones familiares contadas con emoción y detalle.</p>
 
             <div class="chip-list">
-              <a href="bodas" class="chip" data-i18n="cat_wed">Bodas</a>
-              <a href="15-anios" class="chip" data-i18n="cat_15">15 Años</a>
-              <a href="cumpleanos" class="chip" data-i18n="cat_bday">Cumpleaños</a>
-              <a href="embarazo" class="chip" data-i18n="cat_mat">Embarazo</a>
-              <a href="baby-shower" class="chip">Baby Shower</a>
-              <a href="pedidas-de-matrimonio" class="chip" data-i18n="cat_prop">Pedidas</a>
-              <a href="newborn" class="chip">Newborn</a>
+              <a href="sociales#bodas" class="chip" data-i18n="cat_wed">Bodas</a>
+              <a href="sociales#15-anios" class="chip" data-i18n="cat_15">15 Años</a>
+              <a href="sociales#cumpleanos" class="chip" data-i18n="cat_bday">Cumpleaños</a>
+              <a href="sociales#embarazo" class="chip" data-i18n="cat_mat">Embarazo</a>
+              <a href="sociales#baby-shower" class="chip">Baby Shower</a>
+              <a href="sociales#pedidas-de-matrimonio" class="chip" data-i18n="cat_prop">Pedidas</a>
+              <a href="sociales#newborn" class="chip">Newborn</a>
             </div>
 
             <a href="sociales" class="btn btn-primary" data-i18n="soc_btn">Ver portafolio social</a>
@@ -195,7 +195,7 @@
         <a href="marcas" class="btn btn-outline" data-i18n="brands_all">Ver todas las marcas →</a>
       </div>
 
-      <div class="brands-grid reveal">
+      <div class="brands-grid reveal" data-brands>
         <div class="brand-cell">MARCA 01</div>
         <div class="brand-cell">MARCA 02</div>
         <div class="brand-cell">MARCA 03</div>
@@ -282,6 +282,7 @@
         <a href="sobre-mi" data-i18n="nav_about">Sobre mí</a>
         <a href="marcas" data-i18n="nav_brands">Marcas</a>
         <a href="contacto" data-i18n="nav_contact">Contacto</a>
+        <a href="admin/">Editor</a>
       </div>
     </div>
   </footer>
@@ -299,6 +300,7 @@
     </div>
   </div>
 
+  <script src="js/content.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

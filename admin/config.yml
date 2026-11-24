@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: jshwelz/total-media-site
+  branch: main
+  auth_methods: [token]
+
+locale: es
+site_url: https://jshwelz.github.io/total-media-site
+display_url: https://jshwelz.github.io/total-media-site
+logo_url: https://jshwelz.github.io/total-media-site/favicon.svg
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: pages
+    label: Sitio
+    files:
+      - name: home
+        label: Inicio
+        file: content/site.json
+        fields:
+          - name: whatsapp
+            label: WhatsApp
+            widget: string
+            hint: Número con código de país, sin + ni espacios. Ejemplo 50400000000
+          - name: showreel_url
+            label: Showreel
+            widget: string
+            required: false
+            hint: Enlace de YouTube o Vimeo. También acepta un MP4 ya publicado en internet.
+          - name: hero_poster
+            label: Imagen del hero
+            widget: image
+            required: false
+          - name: corporativo_cover
+            label: Portada corporativa
+            widget: image
+            required: false
+          - name: sociales_cover
+            label: Portada social
+            widget: image
+            required: false
+          - name: brands
+            label: Marcas
+            widget: list
+            required: false
+            summary: "{{name}}"
+            fields:
+              - name: name
+                label: Nombre
+                widget: string
+              - name: logo
+                label: Logo
+                widget: image
+                required: false
+
+  - name: portfolio
+    label: Portafolio
+    label_singular: Pieza
+    file: content/portfolio.json
+    identifier_field: title
+    summary: "{{title}} — {{segment}}"
+    fields:
+      - name: title
+        label: Título
+        widget: string
+      - name: segment
+        label: Segmento
+        widget: select
+        default: corporativo
+        options:
+          - { label: Corporativo, value: corporativo }
+          - { label: Sociales, value: sociales }
+      - name: category
+        label: Categoría
+        widget: select
+        options:
+          - { label: Institucionales, value: institucionales }
+          - { label: Comerciales, value: comerciales }
+          - { label: Reels verticales, value: reels-verticales }
+          - { label: Motion graphics, value: motion-graphics }
+          - { label: Dron, value: drone }
+          - { label: Inmobiliaria, value: inmobiliaria }
+          - { label: Fotografía de producto, value: fotografia-producto }
+          - { label: Bodas, value: bodas }
+          - { label: 15 años, value: 15-anios }
+          - { label: Cumpleaños, value: cumpleanos }
+          - { label: Embarazo, value: embarazo }
+          - { label: Baby shower, value: baby-shower }
+          - { label: Pedidas, value: pedidas-de-matrimonio }
+          - { label: Newborn, value: newborn }
+      - name: cover
+        label: Portada
+        widget: image
+        required: false
+      - name: video_url
+        label: Video
+        widget: string
+        required: false
+        hint: Enlace de YouTube o Vimeo. Los archivos de video grandes no se guardan en el repositorio.
+      - name: gallery
+        label: Fotos
+        widget: list
+        required: false
+        field:
+          name: image
+          label: Foto
+          widget: image

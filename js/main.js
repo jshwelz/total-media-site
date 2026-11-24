@@ -4,7 +4,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Mobile Nav
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
-mobileToggle.addEventListener('click', () => {
+mobileToggle?.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 
@@ -23,27 +23,29 @@ document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 // Lightweight Video Modal (prevents third-party iframe slowdowns on initial load)
 const reelModal = document.getElementById('reelModal');
 const reelFrame = document.getElementById('reelFrame');
-// Replace with the real YouTube or Vimeo embed URL.
-const SHOWREEL_EMBED_URL = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0';
-
-document.getElementById('openReelBtn').addEventListener('click', () => {
-  reelFrame.src = SHOWREEL_EMBED_URL;
-  reelModal.classList.add('open');
-  reelModal.setAttribute('aria-hidden', 'false');
-});
+window.TotalMedia = window.TotalMedia || {};
+window.TotalMedia.showreelEmbed = window.TotalMedia.showreelEmbed || 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0';
 
 function closeModal() {
+  if (!reelModal || !reelFrame) return;
   reelModal.classList.remove('open');
   reelModal.setAttribute('aria-hidden', 'true');
   reelFrame.src = '';
 }
 
-document.getElementById('closeReelBtn').addEventListener('click', closeModal);
-reelModal.addEventListener('click', (e) => {
+document.getElementById('openReelBtn')?.addEventListener('click', () => {
+  if (!reelModal || !reelFrame) return;
+  reelFrame.src = window.TotalMedia.showreelEmbed;
+  reelModal.classList.add('open');
+  reelModal.setAttribute('aria-hidden', 'false');
+});
+
+document.getElementById('closeReelBtn')?.addEventListener('click', closeModal);
+reelModal?.addEventListener('click', (e) => {
   if (e.target === reelModal) closeModal();
 });
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && reelModal.classList.contains('open')) closeModal();
+  if (e.key === 'Escape' && reelModal?.classList.contains('open')) closeModal();
 });
 
 // Bilingual ES / EN Dictionary
