@@ -27,10 +27,18 @@ window.TotalMedia = window.TotalMedia || {};
 window.TotalMedia.showreelEmbed = window.TotalMedia.showreelEmbed || 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0';
 
 function closeModal() {
-  if (!reelModal || !reelFrame) return;
+  if (!reelModal) return;
   reelModal.classList.remove('open');
   reelModal.setAttribute('aria-hidden', 'true');
-  reelFrame.src = '';
+  if (reelFrame) {
+    reelFrame.src = '';
+    reelFrame.hidden = false;
+  }
+  const reelImage = document.getElementById('reelImage');
+  if (reelImage) {
+    reelImage.hidden = true;
+    reelImage.removeAttribute('src');
+  }
 }
 
 document.getElementById('openReelBtn')?.addEventListener('click', () => {

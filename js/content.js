@@ -76,6 +76,13 @@
       if (image && src) image.src = mediaSrc(src);
     });
 
+    if (Array.isArray(site.stats)) {
+      document.querySelectorAll('[data-stat]').forEach((node, index) => {
+        const stat = site.stats[index];
+        if (stat && stat.value) node.textContent = stat.value;
+      });
+    }
+
     if (Array.isArray(site.brands) && site.brands.length) {
       const grid = document.querySelector('[data-brands]');
       if (!grid) return;

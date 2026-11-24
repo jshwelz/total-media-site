@@ -56,6 +56,15 @@ collections:
                 label: Logo
                 widget: image
                 required: false
+          - name: stats
+            label: Cifras
+            widget: list
+            required: false
+            summary: "{{value}}"
+            fields:
+              - name: value
+                label: Cifra
+                widget: string
 
   - name: portfolio
     label: Portafolio
@@ -92,6 +101,9 @@ collections:
           - { label: Baby shower, value: baby-shower }
           - { label: Pedidas, value: pedidas-de-matrimonio }
           - { label: Newborn, value: newborn }
+          - { label: Revelación de género, value: revelacion-de-genero }
+          - { label: Cumpleaños de bebé, value: cumpleanos-de-bebe }
+          - { label: Sesiones personales, value: sesiones-personales }
       - name: cover
         label: Portada
         widget: image
@@ -109,3 +121,119 @@ collections:
           name: image
           label: Foto
           widget: image
+
+  - name: paginas
+    label: Páginas
+    label_singular: Página
+    file: content/pages.json
+    identifier_field: slug
+    summary: "{{title}}"
+    create: false
+    delete: false
+    fields:
+      - name: slug
+        label: Dirección
+        widget: string
+        hint: No cambiar esta dirección. Es la URL de la página, por ejemplo bodas.
+      - name: layout
+        label: Tipo de página
+        widget: select
+        options:
+          - { label: Portada de segmento, value: segment }
+          - { label: Categoría, value: category }
+          - { label: Sobre mí, value: about }
+          - { label: Marcas, value: brands }
+          - { label: Contacto, value: contact }
+      - name: group
+        label: Grupo
+        widget: select
+        options:
+          - { label: Corporativo, value: corporativo }
+          - { label: Sociales, value: sociales }
+          - { label: General, value: general }
+      - name: eyebrow
+        label: Etiqueta
+        widget: string
+        required: false
+      - name: title
+        label: Título
+        widget: string
+      - name: summary
+        label: Texto corto
+        widget: text
+        required: false
+        hint: Se usa en la tarjeta de la categoría dentro de Corporativo o Sociales.
+      - name: intro
+        label: Introducción
+        widget: text
+        required: false
+      - name: reel_url
+        label: Reel principal
+        widget: string
+        required: false
+        hint: Enlace de YouTube o Vimeo.
+      - name: videos
+        label: Videos
+        widget: list
+        required: false
+        summary: "{{title}}"
+        fields:
+          - name: title
+            label: Título
+            widget: string
+          - name: url
+            label: Enlace
+            widget: string
+          - name: type
+            label: Tipo
+            widget: select
+            default: largo
+            options:
+              - { label: Video largo, value: largo }
+              - { label: Reel vertical, value: reel }
+      - name: photos
+        label: Fotos
+        widget: list
+        required: false
+        field:
+          name: image
+          label: Foto
+          widget: image
+      - name: phone
+        label: Teléfono
+        widget: string
+        required: false
+      - name: email
+        label: Correo
+        widget: string
+        required: false
+      - name: instagram
+        label: Instagram
+        widget: string
+        required: false
+      - name: tiktok
+        label: TikTok
+        widget: string
+        required: false
+      - name: youtube
+        label: YouTube
+        widget: string
+        required: false
+      - name: collaborators
+        label: Colaboradores
+        widget: list
+        required: false
+        summary: "{{name}}"
+        fields:
+          - { name: name, label: Nombre, widget: string }
+          - { name: role, label: Rol, widget: string, required: false }
+          - { name: bio, label: Descripción, widget: text, required: false }
+      - name: sisters
+        label: Empresas hermanas
+        widget: list
+        required: false
+        summary: "{{name}}"
+        fields:
+          - { name: name, label: Nombre, widget: string }
+          - { name: description, label: Descripción, widget: text, required: false }
+          - { name: url, label: Enlace, widget: string, required: false }

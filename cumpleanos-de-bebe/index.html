@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Los primeros grandes momentos también se cuentan | Total Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+</head>
+<body data-page="cumpleanos-de-bebe">
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="../" class="brand" aria-label="Total Media Pro - Inicio">
+        <svg class="brand-mark" width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="33" height="33" rx="7" stroke="#E4D5B7" stroke-opacity="0.35" stroke-width="1.5" />
+          <path d="M9 6.5L26.5 18L9 29.5" stroke="#F5F5F7" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12.5 10.75C12.5 9.95 13.38 9.46 14.06 9.88L25.4 17.13C26.03 17.53 26.03 18.47 25.4 18.87L14.06 26.12C13.38 26.54 12.5 26.05 12.5 25.25V10.75Z" fill="#E4D5B7" />
+        </svg>
+        <span class="brand-wordmark">TOTAL MEDIA <span class="brand-pro">PRO</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../" data-i18n="nav_home">Inicio</a></li>
+        <li><a href="../corporativo" data-i18n="nav_corp">Corporativo</a></li>
+        <li><a href="../sociales" class="active" data-i18n="nav_social">Sociales</a></li>
+        <li><a href="../sobre-mi" data-i18n="nav_about">Sobre mí</a></li>
+        <li><a href="../marcas" data-i18n="nav_brands">Marcas</a></li>
+        <li><a href="../contacto" data-i18n="nav_contact">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="../contacto" class="btn btn-primary" data-i18n="nav_quote">Cotizar</a>
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+  <section class="portfolio-page"><div class="container" id="pageRoot"></div></section>
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Total Media · Enrique Turcios</div>
+      <div class="footer-links">
+        <a href="../">Inicio</a>
+        <a href="../corporativo">Corporativo</a>
+        <a href="../sociales">Sociales</a>
+        <a href="../contacto">Contacto</a>
+        <a href="../admin/">Editor</a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="reelModal" aria-hidden="true">
+    <div class="modal-inner">
+      <div class="modal-bar">
+        <span class="mono-tag">TOTAL MEDIA</span>
+        <button type="button" class="modal-close" id="closeReelBtn">ESC / CERRAR ✕</button>
+      </div>
+      <div class="video-ratio">
+        <iframe id="reelFrame" src="" title="Video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <img id="reelImage" alt="" hidden />
+      </div>
+    </div>
+  </div>
+  <script>window.SITE_BASE = '..';</script>
+  <script src="../js/content.js"></script>
+  <script src="../js/page.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,642 @@
+[
+  {
+    "slug": "corporativo",
+    "layout": "segment",
+    "group": "corporativo",
+    "eyebrow": "01 // B2B & MARCAS",
+    "title": "Contenido audiovisual para marcas, empresas y negocios",
+    "summary": "Videos, fotografía y piezas visuales para comunicar y vender.",
+    "intro": "Videos institucionales, comerciales, reels, motion graphics, dron, inmobiliaria y fotografía de producto. Elige la categoría y mira solo el trabajo de ese servicio.",
+    "reel_url": "https://www.youtube.com/watch?v=EL3fzhQntUg",
+    "videos": [
+      {
+        "title": "Inauguración SAZÓN LO NUESTRO #2",
+        "url": "https://www.youtube.com/watch?v=EL3fzhQntUg",
+        "type": "largo"
+      },
+      {
+        "title": "Sazón lo Nuestro — resumen",
+        "url": "https://www.youtube.com/watch?v=Tqpdl96JGj8",
+        "type": "largo"
+      },
+      {
+        "title": "Congreso Listas Para El Despegue 2026",
+        "url": "https://www.youtube.com/watch?v=W1I_pPYDj-E",
+        "type": "largo"
+      },
+      {
+        "title": "Truck Depot Business Plan 2026",
+        "url": "https://www.youtube.com/watch?v=TgP4xbBDF90",
+        "type": "largo"
+      },
+      {
+        "title": "Premiación Truck Depot",
+        "url": "https://www.youtube.com/watch?v=xDyV_7vzZcY",
+        "type": "reel"
+      },
+      {
+        "title": "Box 10 aniversario — video institucional",
+        "url": "https://www.youtube.com/watch?v=vypf5h7E4Ys",
+        "type": "largo"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "institucionales",
+    "layout": "category",
+    "group": "corporativo",
+    "eyebrow": "CORPORATIVO",
+    "title": "Videos institucionales que comunican la esencia de tu empresa",
+    "summary": "Videos para comunicar la esencia, servicios y propuesta de valor de una empresa.",
+    "intro": "Producción de videos institucionales para empresas y organizaciones que necesitan presentar su identidad con una imagen profesional.",
+    "reel_url": "https://www.youtube.com/watch?v=vypf5h7E4Ys",
+    "videos": [
+      {
+        "title": "Box 10 aniversario — video institucional",
+        "url": "https://www.youtube.com/watch?v=vypf5h7E4Ys",
+        "type": "largo"
+      },
+      {
+        "title": "Congreso Listas Para El Despegue 2026",
+        "url": "https://www.youtube.com/watch?v=W1I_pPYDj-E",
+        "type": "largo"
+      },
+      {
+        "title": "Truck Depot Business Plan 2026",
+        "url": "https://www.youtube.com/watch?v=TgP4xbBDF90",
+        "type": "largo"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "comerciales",
+    "layout": "category",
+    "group": "corporativo",
+    "eyebrow": "CORPORATIVO",
+    "title": "Comerciales con enfoque visual y memorable",
+    "summary": "Piezas publicitarias para promocionar productos, servicios o campañas.",
+    "intro": "Comerciales pensados para campañas, inauguraciones y piezas que necesitan verse en pantalla y en redes.",
+    "reel_url": "https://www.youtube.com/watch?v=Tqpdl96JGj8",
+    "videos": [
+      {
+        "title": "Sazón lo Nuestro — resumen",
+        "url": "https://www.youtube.com/watch?v=Tqpdl96JGj8",
+        "type": "largo"
+      },
+      {
+        "title": "Inauguración SAZÓN LO NUESTRO #2",
+        "url": "https://www.youtube.com/watch?v=EL3fzhQntUg",
+        "type": "largo"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "reels-verticales",
+    "layout": "category",
+    "group": "corporativo",
+    "eyebrow": "CORPORATIVO",
+    "title": "Reels verticales para marcas",
+    "summary": "Contenido vertical para Instagram, TikTok y plataformas sociales.",
+    "intro": "Piezas cortas en formato vertical para que una marca se vea con ritmo en redes.",
+    "reel_url": "https://www.youtube.com/watch?v=xDyV_7vzZcY",
+    "videos": [
+      {
+        "title": "Premiación Truck Depot",
+        "url": "https://www.youtube.com/watch?v=xDyV_7vzZcY",
+        "type": "reel"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "motion-graphics",
+    "layout": "category",
+    "group": "corporativo",
+    "eyebrow": "CORPORATIVO",
+    "title": "Animación y grafismo en movimiento",
+    "summary": "Animación para anuncios, presentaciones y comunicación visual.",
+    "intro": "Motion graphics para explicar una idea, una marca o una presentación con más impacto.",
+    "reel_url": "https://www.youtube.com/watch?v=TgP4xbBDF90",
+    "videos": [
+      {
+        "title": "Truck Depot Business Plan 2026",
+        "url": "https://www.youtube.com/watch?v=TgP4xbBDF90",
+        "type": "largo"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "drone",
+    "layout": "category",
+    "group": "corporativo",
+    "eyebrow": "CORPORATIVO",
+    "title": "Tomas aéreas para ver el proyecto desde otra escala",
+    "summary": "Tomas aéreas para campañas, eventos, turismo y proyectos inmobiliarios.",
+    "intro": "Filmación con dron para mostrar un lugar, una inauguración o un desarrollo desde el aire.",
+    "reel_url": "https://www.youtube.com/watch?v=EL3fzhQntUg",
+    "videos": [
+      {
+        "title": "Inauguración SAZÓN LO NUESTRO #2",
+        "url": "https://www.youtube.com/watch?v=EL3fzhQntUg",
+        "type": "largo"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "inmobiliaria",
+    "layout": "category",
+    "group": "corporativo",
+    "eyebrow": "CORPORATIVO",
+    "title": "Video y fotografía para propiedades y espacios",
+    "summary": "Video y fotografía para propiedades, proyectos residenciales y comerciales.",
+    "intro": "Recorridos y fotografías para que un espacio se entienda y se desee antes de visitarlo.",
+    "reel_url": "https://www.youtube.com/watch?v=Tqpdl96JGj8",
+    "videos": [
+      {
+        "title": "Sazón lo Nuestro — resumen",
+        "url": "https://www.youtube.com/watch?v=Tqpdl96JGj8",
+        "type": "largo"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "fotografia-producto",
+    "layout": "category",
+    "group": "corporativo",
+    "eyebrow": "CORPORATIVO",
+    "title": "Imágenes para vender y elevar un producto",
+    "summary": "Fotografía para catálogos, redes, campañas y comercio digital.",
+    "intro": "Fotografías de producto pensadas para catálogo, tienda y campañas.",
+    "reel_url": "https://www.youtube.com/watch?v=xDyV_7vzZcY",
+    "videos": [
+      {
+        "title": "Premiación Truck Depot",
+        "url": "https://www.youtube.com/watch?v=xDyV_7vzZcY",
+        "type": "reel"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "sociales",
+    "layout": "segment",
+    "group": "sociales",
+    "eyebrow": "02 // EVENTOS & HISTORIAS",
+    "title": "Historias y celebraciones contadas con emoción y detalle",
+    "summary": "Cobertura de bodas, 15 años y momentos familiares.",
+    "intro": "El portafolio social está dividido por tipo de evento. Entra a la categoría que te corresponde y mira solo ese trabajo.",
+    "reel_url": "https://www.youtube.com/watch?v=h5stgexgWRA",
+    "videos": [
+      {
+        "title": "Boda Yahir y Andrea",
+        "url": "https://www.youtube.com/watch?v=h5stgexgWRA",
+        "type": "largo"
+      },
+      {
+        "title": "Boda Johnny y Karla — mejores momentos",
+        "url": "https://www.youtube.com/watch?v=wcf5nmQqAKQ",
+        "type": "largo"
+      },
+      {
+        "title": "Boda Erlin y Joseline — mejores momentos",
+        "url": "https://www.youtube.com/watch?v=4AmEh9iSjE8",
+        "type": "largo"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "bodas",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Bodas contadas con emoción, detalle y una mirada cinematográfica",
+    "summary": "Video y fotografía de bodas, con la historia y los momentos importantes del día.",
+    "intro": "Highlights, baile y eventos completos. Cada pieza se puede abrir aquí mismo.",
+    "reel_url": "https://www.youtube.com/watch?v=h5stgexgWRA",
+    "videos": [
+      {
+        "title": "Boda Yahir y Andrea",
+        "url": "https://www.youtube.com/watch?v=h5stgexgWRA",
+        "type": "largo"
+      },
+      {
+        "title": "Boda Johnny y Karla — mejores momentos",
+        "url": "https://www.youtube.com/watch?v=wcf5nmQqAKQ",
+        "type": "largo"
+      },
+      {
+        "title": "Boda Erlin y Joseline — mejores momentos",
+        "url": "https://www.youtube.com/watch?v=4AmEh9iSjE8",
+        "type": "largo"
+      },
+      {
+        "title": "Boda Byron y Lesly — resumen",
+        "url": "https://www.youtube.com/watch?v=8L8rO1AD684",
+        "type": "largo"
+      },
+      {
+        "title": "Boda Cinthia y Jose — evento completo",
+        "url": "https://www.youtube.com/watch?v=1T57uy5DxMY",
+        "type": "largo"
+      },
+      {
+        "title": "Boda Johnny y Karla — baile",
+        "url": "https://www.youtube.com/watch?v=CR6TG0PLU3g",
+        "type": "reel"
+      }
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "15-anios",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Una celebración única, convertida en recuerdos",
+    "summary": "Cobertura de quince años con el vals, la fiesta y los retratos.",
+    "intro": "Video y fotografía para una fiesta de 15 años, con espacio para el reel y la galería.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "cumpleanos",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Momentos capturados con energía y autenticidad",
+    "summary": "Cumpleaños familiares y celebraciones privadas.",
+    "intro": "Una galería lista para reemplazar con los cumpleaños que quieras mostrar.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "embarazo",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Sesiones que celebran la espera",
+    "summary": "Maternidad en fotografía y video corto.",
+    "intro": "Retratos de embarazo para mostrar con calma, sin mezclarlos con la fiesta.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "baby-shower",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Recuerdos de una celebración que merece quedar",
+    "summary": "Baby shower en foto y video.",
+    "intro": "Espacio para el reel del evento y las fotografías de la tarde.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "pedidas-de-matrimonio",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "La emoción del sí en un momento irrepetible",
+    "summary": "Pedidas de matrimonio.",
+    "intro": "Un lugar propio para las pedidas, separado de las bodas.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "revelacion-de-genero",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Una sorpresa convertida en recuerdos",
+    "summary": "Revelación de género.",
+    "intro": "Video corto y fotografías del momento de la revelación.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "cumpleanos-de-bebe",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Los primeros grandes momentos también se cuentan",
+    "summary": "Cumpleaños de bebé.",
+    "intro": "Galería para el primer año y las fiestas pequeñas.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "newborn",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Fotografías delicadas para los primeros días",
+    "summary": "Sesiones newborn.",
+    "intro": "Retratos de los primeros días, con una galería aparte del resto de los eventos.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544126592-807ade215a0b?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "sesiones-personales",
+    "layout": "category",
+    "group": "sociales",
+    "eyebrow": "SOCIALES",
+    "title": "Retratos para capturar personalidad y estilo",
+    "summary": "Sesiones personales.",
+    "intro": "Sesiones individuales o de pareja, fuera del calendario de eventos.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "sobre-mi",
+    "layout": "about",
+    "group": "general",
+    "eyebrow": "DETRÁS DE TOTAL MEDIA",
+    "title": "Enrique Turcios",
+    "summary": "Historia, equipo y empresas hermanas.",
+    "intro": "Soy Enrique Turcios, fundador de Total Media, productor audiovisual y fotógrafo. He trabajado en video y fotografía para marcas, empresas y eventos, contando cada historia con una imagen clara y emocional.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [
+      {
+        "name": "Cámara",
+        "role": "Dirección de fotografía",
+        "bio": "Operación de cámara en set y en eventos."
+      },
+      {
+        "name": "Edición",
+        "role": "Postproducción",
+        "bio": "Corte, color y entrega de piezas largas y reels."
+      }
+    ],
+    "sisters": [
+      {
+        "name": "Empresa hermana 01",
+        "description": "Espacio de ejemplo para una marca relacionada. Cambia el nombre, el texto y el enlace desde el editor.",
+        "url": "https://totalmedia.pro"
+      },
+      {
+        "name": "Empresa hermana 02",
+        "description": "Segundo espacio de ejemplo para una empresa hermana.",
+        "url": "https://totalmedia.pro"
+      }
+    ]
+  },
+  {
+    "slug": "marcas",
+    "layout": "brands",
+    "group": "general",
+    "eyebrow": "CONFIANZA COMERCIAL",
+    "title": "Marcas y empresas que han confiado en Total Media",
+    "summary": "Logos y clientes corporativos.",
+    "intro": "Proyectos audiovisuales y fotográficos para empresas, marcas y organizaciones de distintos rubros. Los logos se editan en Inicio, dentro de Marcas.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [],
+    "phone": "",
+    "email": "",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  },
+  {
+    "slug": "contacto",
+    "layout": "contact",
+    "group": "general",
+    "eyebrow": "HABLEMOS",
+    "title": "Hablemos de tu próximo proyecto",
+    "summary": "WhatsApp, correo y formulario.",
+    "intro": "Si necesitas video o fotografía para tu marca, empresa o evento, escribe y te ayudamos a encontrar la opción.",
+    "reel_url": "",
+    "videos": [],
+    "photos": [],
+    "phone": "50400000000",
+    "email": "hola@totalmedia.pro",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/@TotalMediaPro",
+    "collaborators": [],
+    "sisters": []
+  }
+]
