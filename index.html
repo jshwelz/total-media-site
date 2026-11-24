@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Total Media | Producción Audiovisual y Fotografía Corporativa y Social</title>
+  <meta name="description" content="Total Media por Enrique Turcios: producción audiovisual cinematográfica, fotografía comercial, inmobiliaria, dron y cobertura de bodas y eventos sociales." />
+  <link rel="canonical" href="https://totalmedia.pro/" />
+  <link rel="alternate" hreflang="es" href="https://totalmedia.pro/" />
+  <link rel="alternate" hreflang="en" href="https://totalmedia.pro/en/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://totalmedia.pro/" />
+  <meta property="og:title" content="Total Media | Producción Audiovisual y Fotografía" />
+  <meta property="og:description" content="Portafolios especializados en contenido corporativo, marcas, inmobiliaria y eventos sociales con enfoque cinematográfico." />
+
+  <!-- Editorial & Cinema Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Total Media",
+    "url": "https://totalmedia.pro/",
+    "founder": {
+      "@type": "Person",
+      "name": "Enrique Turcios"
+    },
+    "description": "Productora audiovisual y fotografía especializada en contenido corporativo, marcas, inmobiliaria y eventos sociales.",
+    "knowsAbout": [
+      "Producción Audiovisual",
+      "Videos Institucionales",
+      "Comerciales",
+      "Fotografía de Producto",
+      "Video Inmobiliario",
+      "Filmación con Dron",
+      "Fotografía y Video de Bodas"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="./" class="brand">
+        <span class="brand-dot"></span>
+        <span>Total Media</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./" class="active" data-i18n="nav_home">Inicio</a></li>
+        <li><a href="corporativo" data-i18n="nav_corp">Corporativo</a></li>
+        <li><a href="sociales" data-i18n="nav_social">Sociales</a></li>
+        <li><a href="sobre-mi" data-i18n="nav_about">Sobre mí</a></li>
+        <li><a href="marcas" data-i18n="nav_brands">Marcas</a></li>
+        <li><a href="contacto" data-i18n="nav_contact">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="es">ES</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="contacto" class="btn btn-primary" data-i18n="nav_quote">Cotizar</a>
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SHOWREEL -->
+  <section class="hero" id="inicio">
+    <div class="hero-media">
+      <!-- Poster: assets/images/hero/showreel-poster.jpg -->
+      <!-- Loop:   assets/video/total-media-showreel.mp4 -->
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?auto=format&fit=crop&w=1800&q=80">
+        <!-- <source src="assets/video/total-media-showreel.mp4" type="video/mp4" /> -->
+      </video>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <div class="container hero-content">
+      <span class="mono-tag" data-i18n="hero_tag">PRODUCTORA AUDIOVISUAL & FOTOGRAFÍA</span>
+      <h1 data-i18n="hero_title">Producción audiovisual y fotografía para marcas, empresas y momentos inolvidables.</h1>
+      <p data-i18n="hero_sub">Portafolios especializados en contenido corporativo y eventos sociales, organizados por segmento para que cada cliente encuentre exactamente lo que busca.</p>
+
+      <div class="hero-ctas">
+        <a href="corporativo" class="btn btn-primary" data-i18n="cta_corp">Explorar Corporativo →</a>
+        <a href="sociales" class="btn btn-outline" data-i18n="cta_social">Explorar Sociales →</a>
+        <a href="https://wa.me/50400000000" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="cta_wa">WhatsApp Directo</a>
+      </div>
+
+      <button type="button" class="reel-trigger" id="openReelBtn">
+        <span class="play-circle">▶</span>
+        <span data-i18n="watch_reel">Ver Showreel General (01:30)</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 2. DUAL SEGMENT PORTALS (NO MIXED GALLERIES) -->
+  <section id="segmentos">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="mono-tag" data-i18n="seg_tag">DOS UNIVERSOS ESPECIALIZADOS</span>
+          <h2 data-i18n="seg_title">Elige el portafolio diseñado para tu proyecto.</h2>
+        </div>
+        <p data-i18n="seg_desc">Separamos nuestro trabajo comercial de nuestra cobertura de eventos personales para ofrecerte una experiencia clara, directa y relevante.</p>
+      </div>
+
+      <div class="segment-grid">
+        <!-- A) CORPORATIVO — cover: assets/images/corporativo/cover.jpg -->
+        <article class="segment-card reveal">
+          <div class="segment-bg">
+            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80" alt="Producción audiovisual corporativa y comercial" loading="lazy" />
+            <div class="segment-overlay"></div>
+          </div>
+
+          <div class="segment-top">
+            <span class="mono-tag">01 // B2B & MARCAS</span>
+          </div>
+
+          <div class="segment-bottom">
+            <h3 data-i18n="corp_card_title">Corporativo & Comercial</h3>
+            <p data-i18n="corp_card_desc">Contenido audiovisual estratégico para empresas, marcas, restaurantes, desarrollos inmobiliarios y campañas digitales.</p>
+
+            <div class="chip-list">
+              <a href="institucionales" class="chip" data-i18n="cat_inst">Institucionales</a>
+              <a href="comerciales" class="chip" data-i18n="cat_comm">Comerciales</a>
+              <a href="reels-verticales" class="chip" data-i18n="cat_reels">Reels Verticales</a>
+              <a href="motion-graphics" class="chip">Motion Graphics</a>
+              <a href="drone" class="chip" data-i18n="cat_drone">Dron</a>
+              <a href="inmobiliaria" class="chip" data-i18n="cat_real">Inmobiliaria</a>
+              <a href="fotografia-producto" class="chip" data-i18n="cat_prod">Fotografía de Producto</a>
+            </div>
+
+            <a href="corporativo" class="btn btn-primary" data-i18n="corp_btn">Ver portafolio corporativo</a>
+          </div>
+        </article>
+
+        <!-- B) SOCIALES — cover: assets/images/sociales/cover.jpg -->
+        <article class="segment-card reveal">
+          <div class="segment-bg">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" alt="Fotografía y video cinematográfico de bodas y eventos sociales" loading="lazy" />
+            <div class="segment-overlay"></div>
+          </div>
+
+          <div class="segment-top">
+            <span class="mono-tag">02 // EVENTOS & HISTORIAS</span>
+          </div>
+
+          <div class="segment-bottom">
+            <h3 data-i18n="soc_card_title">Sociales & Celebraciones</h3>
+            <p data-i18n="soc_card_desc">Cobertura cinematográfica en video y fotografía para bodas, 15 años y celebraciones familiares contadas con emoción y detalle.</p>
+
+            <div class="chip-list">
+              <a href="bodas" class="chip" data-i18n="cat_wed">Bodas</a>
+              <a href="15-anios" class="chip" data-i18n="cat_15">15 Años</a>
+              <a href="cumpleanos" class="chip" data-i18n="cat_bday">Cumpleaños</a>
+              <a href="embarazo" class="chip" data-i18n="cat_mat">Embarazo</a>
+              <a href="baby-shower" class="chip">Baby Shower</a>
+              <a href="pedidas-de-matrimonio" class="chip" data-i18n="cat_prop">Pedidas</a>
+              <a href="newborn" class="chip">Newborn</a>
+            </div>
+
+            <a href="sociales" class="btn btn-primary" data-i18n="soc_btn">Ver portafolio social</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SELECTED BRANDS — logos: assets/images/brands/ -->
+  <section id="marcas">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="mono-tag" data-i18n="brands_tag">CONFIANZA COMERCIAL</span>
+          <h2 data-i18n="brands_title">Marcas y empresas que han confiado en nuestro trabajo.</h2>
+        </div>
+        <a href="marcas" class="btn btn-outline" data-i18n="brands_all">Ver todas las marcas →</a>
+      </div>
+
+      <div class="brands-grid reveal">
+        <div class="brand-cell">MARCA 01</div>
+        <div class="brand-cell">MARCA 02</div>
+        <div class="brand-cell">MARCA 03</div>
+        <div class="brand-cell">MARCA 04</div>
+        <div class="brand-cell">MARCA 05</div>
+        <div class="brand-cell">MARCA 06</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ENRIQUE TURCIOS / STUDIO CREDIBILITY BENTO -->
+  <section id="sobre-mi">
+    <div class="container">
+      <div class="bento-about">
+        <div class="bento-box reveal">
+          <div>
+            <span class="mono-tag" data-i18n="about_tag">DETRÁS DE TOTAL MEDIA</span>
+            <h3 data-i18n="about_title">Narrativa visual, técnica cinematográfica y dirección enfocada en resultados.</h3>
+            <p data-i18n="about_text">Soy Enrique Turcios, productor audiovisual y fotógrafo. Total Media nace de años de experiencia en producción, dirección y edición, creando piezas visuales que conectan con marcas, empresas y momentos irrepetibles.</p>
+          </div>
+          <div>
+            <a href="sobre-mi" class="btn btn-outline" data-i18n="about_btn">Conoce mi historia y equipo →</a>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <div class="stat-num">100+</div>
+            <div class="stat-label" data-i18n="stat_1">Proyectos audiovisuales y fotográficos entregados</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">10+</div>
+            <div class="stat-label" data-i18n="stat_2">Años de experiencia en producción y edición</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4K / RAW</div>
+            <div class="stat-label" data-i18n="stat_3">Flujo de trabajo cinematográfico y dron</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2 Áreas</div>
+            <div class="stat-label" data-i18n="stat_4">Portafolios dedicados: Corporativo y Social</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DIRECT CONVERSION CTA -->
+  <section id="contacto-cta">
+    <div class="container">
+      <div class="cta-panel reveal">
+        <div>
+          <span class="mono-tag" data-i18n="cta_tag">INICIEMOS TU PROYECTO</span>
+          <h2 data-i18n="cta_title">¿Buscas video o fotografía para tu marca o tu evento?</h2>
+          <p data-i18n="cta_desc">Cuéntanos qué necesitas y te compartimos propuestas y ejemplos específicos de nuestro portafolio.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://wa.me/50400000000" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="cta_btn_wa">Cotizar por WhatsApp</a>
+          <a href="contacto" class="btn btn-outline" data-i18n="cta_btn_form">Formulario de contacto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Total Media · Enrique Turcios · <a href="https://totalmedia.pro">totalmedia.pro</a></div>
+      <div class="footer-links">
+        <a href="corporativo" data-i18n="nav_corp">Corporativo</a>
+        <a href="sociales" data-i18n="nav_social">Sociales</a>
+        <a href="sobre-mi" data-i18n="nav_about">Sobre mí</a>
+        <a href="marcas" data-i18n="nav_brands">Marcas</a>
+        <a href="contacto" data-i18n="nav_contact">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX REEL MODAL (LAZY LOADED ON CLICK) -->
+  <div class="modal" id="reelModal" aria-hidden="true">
+    <div class="modal-inner">
+      <div class="modal-bar">
+        <span class="mono-tag">TOTAL MEDIA // SHOWREEL</span>
+        <button type="button" class="modal-close" id="closeReelBtn">ESC / CERRAR ✕</button>
+      </div>
+      <div class="video-ratio">
+        <iframe id="reelFrame" src="" title="Total Media Showreel" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
