@@ -64,7 +64,7 @@
     "group": "corporativo",
     "eyebrow": "CORPORATIVO",
     "title": "Videos institucionales que comunican la esencia de tu empresa",
-    "summary": "Videos para comunicar la esencia, servicios y propuesta de valor de una empresa.",
+    "summary": "La esencia y los servicios de tu empresa.",
     "intro": "Producción de videos institucionales para empresas y organizaciones que necesitan presentar su identidad con una imagen profesional.",
     "reel_url": "https://www.youtube.com/watch?v=vypf5h7E4Ys",
     "videos": [
@@ -95,7 +95,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Institucionales"
   },
   {
     "slug": "comerciales",
@@ -103,7 +104,7 @@
     "group": "corporativo",
     "eyebrow": "CORPORATIVO",
     "title": "Comerciales con enfoque visual y memorable",
-    "summary": "Piezas publicitarias para promocionar productos, servicios o campañas.",
+    "summary": "Piezas para campañas y lanzamientos.",
     "intro": "Comerciales pensados para campañas, inauguraciones y piezas que necesitan verse en pantalla y en redes.",
     "reel_url": "https://www.youtube.com/watch?v=Tqpdl96JGj8",
     "videos": [
@@ -129,7 +130,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Comerciales"
   },
   {
     "slug": "reels-verticales",
@@ -137,7 +139,7 @@
     "group": "corporativo",
     "eyebrow": "CORPORATIVO",
     "title": "Reels verticales para marcas",
-    "summary": "Contenido vertical para Instagram, TikTok y plataformas sociales.",
+    "summary": "Vertical para Instagram y TikTok.",
     "intro": "Piezas cortas en formato vertical para que una marca se vea con ritmo en redes.",
     "reel_url": "https://www.youtube.com/watch?v=xDyV_7vzZcY",
     "videos": [
@@ -157,7 +159,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Reels"
   },
   {
     "slug": "motion-graphics",
@@ -165,7 +168,7 @@
     "group": "corporativo",
     "eyebrow": "CORPORATIVO",
     "title": "Animación y grafismo en movimiento",
-    "summary": "Animación para anuncios, presentaciones y comunicación visual.",
+    "summary": "Animación para explicar una idea.",
     "intro": "Motion graphics para explicar una idea, una marca o una presentación con más impacto.",
     "reel_url": "https://www.youtube.com/watch?v=TgP4xbBDF90",
     "videos": [
@@ -184,7 +187,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Motion graphics"
   },
   {
     "slug": "drone",
@@ -192,7 +196,7 @@
     "group": "corporativo",
     "eyebrow": "CORPORATIVO",
     "title": "Tomas aéreas para ver el proyecto desde otra escala",
-    "summary": "Tomas aéreas para campañas, eventos, turismo y proyectos inmobiliarios.",
+    "summary": "Tomas aéreas del lugar o el proyecto.",
     "intro": "Filmación con dron para mostrar un lugar, una inauguración o un desarrollo desde el aire.",
     "reel_url": "https://www.youtube.com/watch?v=EL3fzhQntUg",
     "videos": [
@@ -213,7 +217,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Dron"
   },
   {
     "slug": "inmobiliaria",
@@ -221,7 +226,7 @@
     "group": "corporativo",
     "eyebrow": "CORPORATIVO",
     "title": "Video y fotografía para propiedades y espacios",
-    "summary": "Video y fotografía para propiedades, proyectos residenciales y comerciales.",
+    "summary": "Recorridos de propiedades y espacios.",
     "intro": "Recorridos y fotografías para que un espacio se entienda y se desee antes de visitarlo.",
     "reel_url": "https://www.youtube.com/watch?v=Tqpdl96JGj8",
     "videos": [
@@ -242,7 +247,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Inmobiliaria"
   },
   {
     "slug": "fotografia-producto",
@@ -250,7 +256,7 @@
     "group": "corporativo",
     "eyebrow": "CORPORATIVO",
     "title": "Imágenes para vender y elevar un producto",
-    "summary": "Fotografía para catálogos, redes, campañas y comercio digital.",
+    "summary": "Imágenes para catálogo y tienda.",
     "intro": "Fotografías de producto pensadas para catálogo, tienda y campañas.",
     "reel_url": "https://www.youtube.com/watch?v=xDyV_7vzZcY",
     "videos": [
@@ -270,7 +276,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Producto"
   },
   {
     "slug": "sociales",
@@ -322,7 +329,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Bodas contadas con emoción, detalle y una mirada cinematográfica",
-    "summary": "Video y fotografía de bodas, con la historia y los momentos importantes del día.",
+    "summary": "Video y fotografía con la historia completa del día.",
     "intro": "Highlights, baile y eventos completos. Cada video se abre en YouTube o Facebook.",
     "reel_url": "https://www.youtube.com/watch?v=h5stgexgWRA",
     "videos": [
@@ -373,7 +380,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Bodas"
   },
   {
     "slug": "15-anios",
@@ -381,7 +389,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Una celebración única, convertida en recuerdos",
-    "summary": "Cobertura de quince años con el vals, la fiesta y los retratos.",
+    "summary": "El vals, la fiesta y los retratos.",
     "intro": "Video y fotografía para una fiesta de 15 años, con espacio para el reel y la galería.",
     "reel_url": "",
     "videos": [],
@@ -395,7 +403,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "15 años"
   },
   {
     "slug": "cumpleanos",
@@ -403,7 +412,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Momentos capturados con energía y autenticidad",
-    "summary": "Cumpleaños familiares y celebraciones privadas.",
+    "summary": "Celebraciones con energía real.",
     "intro": "Una galería lista para reemplazar con los cumpleaños que quieras mostrar.",
     "reel_url": "",
     "videos": [],
@@ -417,7 +426,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Cumpleaños"
   },
   {
     "slug": "embarazo",
@@ -425,7 +435,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Sesiones que celebran la espera",
-    "summary": "Maternidad en fotografía y video corto.",
+    "summary": "Sesiones que celebran la espera.",
     "intro": "Retratos de embarazo para mostrar con calma, sin mezclarlos con la fiesta.",
     "reel_url": "",
     "videos": [],
@@ -439,7 +449,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Embarazo"
   },
   {
     "slug": "baby-shower",
@@ -447,7 +458,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Recuerdos de una celebración que merece quedar",
-    "summary": "Baby shower en foto y video.",
+    "summary": "Foto y video del festejo.",
     "intro": "Espacio para el reel del evento y las fotografías de la tarde.",
     "reel_url": "",
     "videos": [],
@@ -461,7 +472,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Baby shower"
   },
   {
     "slug": "pedidas-de-matrimonio",
@@ -469,7 +481,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "La emoción del sí en un momento irrepetible",
-    "summary": "Pedidas de matrimonio.",
+    "summary": "La emoción del sí.",
     "intro": "Un lugar propio para las pedidas, separado de las bodas.",
     "reel_url": "",
     "videos": [],
@@ -483,7 +495,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Pedidas"
   },
   {
     "slug": "revelacion-de-genero",
@@ -491,7 +504,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Una sorpresa convertida en recuerdos",
-    "summary": "Revelación de género.",
+    "summary": "Una sorpresa para recordar.",
     "intro": "Video corto y fotografías del momento de la revelación.",
     "reel_url": "",
     "videos": [],
@@ -505,7 +518,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Revelación de género"
   },
   {
     "slug": "cumpleanos-de-bebe",
@@ -513,7 +527,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Los primeros grandes momentos también se cuentan",
-    "summary": "Cumpleaños de bebé.",
+    "summary": "Los primeros grandes momentos.",
     "intro": "Galería para el primer año y las fiestas pequeñas.",
     "reel_url": "",
     "videos": [],
@@ -527,7 +541,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Cumpleaños de bebé"
   },
   {
     "slug": "newborn",
@@ -535,7 +550,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Fotografías delicadas para los primeros días",
-    "summary": "Sesiones newborn.",
+    "summary": "Retratos de los primeros días.",
     "intro": "Retratos de los primeros días, con una galería aparte del resto de los eventos.",
     "reel_url": "",
     "videos": [],
@@ -549,7 +564,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Newborn"
   },
   {
     "slug": "sesiones-personales",
@@ -557,7 +573,7 @@
     "group": "sociales",
     "eyebrow": "SOCIALES",
     "title": "Retratos para capturar personalidad y estilo",
-    "summary": "Sesiones personales.",
+    "summary": "Tu personalidad y estilo.",
     "intro": "Sesiones individuales o de pareja, fuera del calendario de eventos.",
     "reel_url": "",
     "videos": [],
@@ -571,7 +587,8 @@
     "tiktok": "https://www.tiktok.com/",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "card_title": "Sesiones"
   },
   {
     "slug": "sobre-mi",

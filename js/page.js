@@ -75,6 +75,47 @@
     modal.setAttribute('aria-hidden', 'false');
   }
 
+  function profileLink(url) {
+    if (!url) return '';
+    try {
+      const path = new URL(url).pathname.replace(/\/+$/, '');
+      return path ? url : '';
+    } catch (error) {
+      return '';
+    }
+  }
+
+  function filmCard(item) {
+    const link = document.createElement('a');
+    link.className = 'film-card';
+    link.href = watchUrl(item.url);
+    link.target = '_blank';
+    link.rel = 'noopener';
+    const thumb = document.createElement('span');
+    thumb.className = 'film-thumb';
+    const id = (item.url.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/) || [])[1];
+    if (id) {
+      const image = document.createElement('img');
+      image.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+      image.alt = '';
+      thumb.appendChild(image);
+    }
+    const play = document.createElement('span');
+    play.className = 'film-play';
+    play.setAttribute('aria-hidden', 'true');
+    play.textContent = '▶';
+    thumb.appendChild(play);
+    const meta = document.createElement('span');
+    meta.className = 'film-meta';
+    const title = document.createElement('p');
+    title.textContent = item.title || 'Video';
+    const where = document.createElement('span');
+    where.textContent = watchLabel(item.url).replace('Ver en ', '');
+    meta.append(title, where);
+    link.append(thumb, meta);
+    return link;
+  }
+
   function videoCard(item) {
     const link = document.createElement('a');
     link.className = 'piece-card';
@@ -158,19 +199,50 @@
     }
 
     if (page.layout === 'segment') {
+      const listed = order[page.group] || [];
+      const extraKeys = pages
+        .filter((item) => item.group === page.group && item.layout === 'category' && !listed.includes(item.slug))
+        .map((item) => item.slug);
+      const spans = {
+        bodas: 'tile-lg',
+        '15-anios': 'tile-tall',
+        'sesiones-personales': 'tile-wide',
+        institucionales: 'tile-lg',
+        comerciales: 'tile-tall',
+        'fotografia-producto': 'tile-wide'
+      };
       const cards = document.createElement('div');
-      cards.className = 'category-grid';
-      (order[page.group] || []).forEach((key) => {
+      cards.className = 'social-mosaic';
+      listed.concat(extraKeys).forEach((key) => {
         const child = pages.find((item) => item.slug === key);
         if (!child) return;
         const link = document.createElement('a');
-        link.className = 'category-card';
         link.href = `${BASE}/${child.slug}`;
-        const name = document.createElement('h3');
-        name.textContent = child.title;
-        const text = document.createElement('p');
-        text.textContent = child.summary || '';
-        link.append(name, text);
+        link.className = `social-tile ${spans[child.slug] || ''}`.trim();
+        const cover = photosOf(child)[0];
+        if (cover) {
+          const image = document.createElement('img');
+          image.src = mediaSrc(cover);
+          image.alt = child.card_title || child.title;
+          link.appendChild(image);
+        }
+        const shade = document.createElement('span');
+        shade.className = 'tile-shade';
+        const copy = document.createElement('span');
+        copy.className = 'tile-copy';
+        const name = document.createElement('h2');
+        name.textContent = child.card_title || child.title;
+        copy.appendChild(name);
+        if (child.summary) {
+          const line = document.createElement('p');
+          line.textContent = child.summary;
+          copy.appendChild(line);
+        }
+        const arrow = document.createElement('span');
+        arrow.className = 'tile-arrow';
+        arrow.setAttribute('aria-hidden', 'true');
+        arrow.textContent = '↗';
+        link.append(shade, copy, arrow);
         cards.appendChild(link);
       });
       root.appendChild(cards);
@@ -178,20 +250,46 @@
 
     const extra = extrasFromPortfolio(page, pieces);
     const videos = (Array.isArray(page.videos) ? page.videos.filter((item) => item && item.url) : []).concat(extra.videos);
-    const longVideos = videos.filter((item) => item.type !== 'reel');
-    const reels = videos.filter((item) => item.type === 'reel');
-    [section('Videos', longVideos.map(videoCard)), section('Reels', reels.map(videoCard))].forEach((block) => {
-      if (block) root.appendChild(block);
-    });
-
     const photos = photosOf(page).concat(extra.photos);
+    const showcase = page.layout === 'segment';
+    const filmTitle = page.slug === 'corporativo' ? 'Piezas y recaps' : 'Películas y mejores momentos';
+
+    if (showcase) {
+      if (videos.length) {
+        const block = document.createElement('div');
+        block.className = 'media-block';
+        const kicker = document.createElement('p');
+        kicker.className = 'section-kicker';
+        kicker.textContent = '03 // VIDEOS';
+        const heading = document.createElement('h2');
+        heading.textContent = filmTitle;
+        const grid = document.createElement('div');
+        grid.className = 'film-grid';
+        videos.forEach((item) => grid.appendChild(filmCard(item)));
+        block.append(kicker, heading, grid);
+        root.appendChild(block);
+      }
+    } else {
+      const longVideos = videos.filter((item) => item.type !== 'reel');
+      const reels = videos.filter((item) => item.type === 'reel');
+      [section('Videos', longVideos.map(videoCard)), section('Reels', reels.map(videoCard))].forEach((block) => {
+        if (block) root.appendChild(block);
+      });
+    }
+
     if (photos.length) {
       const block = document.createElement('div');
       block.className = 'media-block';
+      if (showcase) {
+        const kicker = document.createElement('p');
+        kicker.className = 'section-kicker';
+        kicker.textContent = '04 // FOTOGRAFÍAS';
+        block.appendChild(kicker);
+      }
       const heading = document.createElement('h2');
       heading.textContent = page.layout === 'brands' ? 'Logos' : 'Fotografías';
       const grid = document.createElement('div');
-      grid.className = 'photo-grid';
+      grid.className = showcase ? 'photo-grid social-photos' : 'photo-grid';
       photos.forEach((src) => {
         const button = document.createElement('button');
         button.type = 'button';
@@ -203,7 +301,7 @@
         button.addEventListener('click', () => openPhoto(image.src, image.alt));
         grid.appendChild(button);
       });
-      block.append(heading, grid);
+      block.append(...(showcase ? [grid] : [heading, grid]));
       root.appendChild(block);
     }
 
@@ -274,6 +372,86 @@
       });
       block.append(heading, grid);
       root.appendChild(block);
+    }
+
+    if (page.layout === 'segment') {
+      const corporate = page.slug === 'corporativo';
+      const cta = document.createElement('div');
+      cta.className = 'social-cta';
+      const copy = document.createElement('div');
+      const heading = document.createElement('h2');
+      heading.textContent = corporate ? '¿Listo para el próximo proyecto?' : '¿Lista para guardar tu evento?';
+      const text = document.createElement('p');
+      text.textContent = corporate
+        ? 'Cuéntanos la fecha, la ciudad y el tipo de pieza. Te compartimos disponibilidad y paquetes.'
+        : 'Cuéntanos la fecha, la ciudad y el tipo de evento. Te compartimos disponibilidad y paquetes.';
+      const actions = document.createElement('div');
+      actions.className = 'cta-actions';
+      const quote = document.createElement('a');
+      quote.className = 'btn btn-primary';
+      quote.href = `${BASE}/contacto`;
+      quote.textContent = corporate ? 'Cotizar mi proyecto' : 'Cotizar mi evento';
+      actions.appendChild(quote);
+      const contactPage = pages.find((item) => item.slug === 'contacto');
+      const more = profileLink(page.instagram) || profileLink(contactPage && contactPage.facebook);
+      if (more) {
+        const link = document.createElement('a');
+        link.className = 'btn btn-outline';
+        link.href = more;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = 'Ver más trabajo';
+        actions.appendChild(link);
+      }
+      const number = (site && site.whatsapp) || '';
+      if (number) {
+        const whatsapp = document.createElement('a');
+        whatsapp.className = 'btn btn-outline';
+        whatsapp.href = `https://wa.me/${String(number).replace(/[^\d]/g, '')}`;
+        whatsapp.target = '_blank';
+        whatsapp.rel = 'noopener';
+        whatsapp.textContent = 'WhatsApp';
+        actions.appendChild(whatsapp);
+      }
+      copy.append(heading, text, actions);
+      const points = document.createElement('ul');
+      points.className = 'social-points';
+      (corporate
+        ? ['Video, foto y reels para tu marca', 'Entrega en 3 a 4 semanas', 'Cobertura en toda la república']
+        : ['Cobertura en foto y video', 'Entrega en 3 a 4 semanas', 'Cobertura en toda la república']
+      ).forEach((item) => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        points.appendChild(li);
+      });
+      cta.append(copy, points);
+      root.appendChild(cta);
+    } else if (page.layout === 'segment' || page.layout === 'category') {
+      const cta = document.createElement('div');
+      cta.className = 'page-cta';
+      const heading = document.createElement('h2');
+      heading.textContent = 'Cotiza tu evento';
+      const text = document.createElement('p');
+      text.textContent = 'Cuéntanos la fecha y el tipo de cobertura.';
+      const actions = document.createElement('div');
+      actions.className = 'cta-actions';
+      const quote = document.createElement('a');
+      quote.className = 'btn btn-primary';
+      quote.href = `${BASE}/contacto`;
+      quote.textContent = 'Cotiza tu evento';
+      actions.appendChild(quote);
+      const number = (site && site.whatsapp) || page.phone || '';
+      if (number) {
+        const whatsapp = document.createElement('a');
+        whatsapp.className = 'btn btn-outline';
+        whatsapp.href = `https://wa.me/${String(number).replace(/[^\d]/g, '')}`;
+        whatsapp.target = '_blank';
+        whatsapp.rel = 'noopener';
+        whatsapp.textContent = 'WhatsApp';
+        actions.appendChild(whatsapp);
+      }
+      cta.append(heading, text, actions);
+      root.appendChild(cta);
     }
 
     if (page.layout === 'contact' || page.phone || page.email) {
