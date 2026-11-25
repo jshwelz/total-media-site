@@ -15,48 +15,48 @@
     return `${BASE}/${clean}`;
   }
 
-  function toEmbed(url) {
+  function watchUrl(url) {
     if (!url) return '';
     try {
       const parsed = new URL(url, window.location.href);
       const host = parsed.hostname.replace(/^www\./, '');
       if (host === 'youtu.be') {
         const id = parsed.pathname.split('/').filter(Boolean)[0];
-        return id ? `https://www.youtube.com/embed/${id}?autoplay=1&rel=0` : url;
+        return id ? `https://www.youtube.com/watch?v=${id}` : url;
       }
-      if (host === 'youtube.com' || host === 'm.youtube.com') {
-        if (parsed.pathname.startsWith('/embed/')) return url;
-        const id = parsed.searchParams.get('v');
-        return id ? `https://www.youtube.com/embed/${id}?autoplay=1&rel=0` : url;
+      if (host === 'youtube.com' || host === 'm.youtube.com' || host === 'youtube-nocookie.com') {
+        const embedId = parsed.pathname.startsWith('/embed/') ? parsed.pathname.split('/').filter(Boolean)[1] : '';
+        const id = parsed.searchParams.get('v') || embedId;
+        return id ? `https://www.youtube.com/watch?v=${id}` : parsed.toString();
       }
-      if (host === 'vimeo.com') {
+      if (host === 'player.vimeo.com') {
         const id = parsed.pathname.split('/').filter(Boolean).pop();
-        return id ? `https://player.vimeo.com/video/${id}?autoplay=1` : url;
+        return id ? `https://vimeo.com/${id}` : url;
       }
-      if (host === 'facebook.com' || host === 'fb.watch') {
-        return `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(parsed.href)}&show_text=false&width=1280`;
+      if (host === 'facebook.com' && parsed.pathname.startsWith('/plugins/video.php')) {
+        return parsed.searchParams.get('href') || url;
       }
+      return parsed.toString();
     } catch (error) {
       return url;
     }
-    return url;
+  }
+
+  function watchLabel(url) {
+    try {
+      const host = new URL(url, window.location.href).hostname.replace(/^www\./, '');
+      if (host === 'youtube.com' || host === 'm.youtube.com' || host === 'youtu.be' || host === 'youtube-nocookie.com') return 'Ver en YouTube';
+      if (host === 'facebook.com' || host === 'fb.watch') return 'Ver en Facebook';
+      if (host === 'vimeo.com' || host === 'player.vimeo.com') return 'Ver en Vimeo';
+    } catch (error) {
+      return 'Ver video';
+    }
+    return 'Ver video';
   }
 
   function photosOf(page) {
     if (!Array.isArray(page.photos)) return [];
     return page.photos.map((entry) => (typeof entry === 'string' ? entry : entry && entry.image)).filter(Boolean);
-  }
-
-  function openVideo(url) {
-    const frame = document.getElementById('reelFrame');
-    const image = document.getElementById('reelImage');
-    const modal = document.getElementById('reelModal');
-    if (!frame || !modal) return;
-    if (image) image.hidden = true;
-    frame.hidden = false;
-    frame.src = toEmbed(url);
-    modal.classList.add('open');
-    modal.setAttribute('aria-hidden', 'false');
   }
 
   function openPhoto(src, alt) {
@@ -65,7 +65,7 @@
     const modal = document.getElementById('reelModal');
     if (!image || !modal) return;
     if (frame) {
-      frame.src = '';
+      frame.src = 'about:blank';
       frame.hidden = true;
     }
     image.hidden = false;
@@ -76,15 +76,17 @@
   }
 
   function videoCard(item) {
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'piece-card';
+    const link = document.createElement('a');
+    link.className = 'piece-card';
+    link.href = watchUrl(item.url);
+    link.target = '_blank';
+    link.rel = 'noopener';
     const id = (item.url.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/) || [])[1];
     if (id) {
       const image = document.createElement('img');
       image.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
       image.alt = item.title || '';
-      button.appendChild(image);
+      link.appendChild(image);
     }
     const meta = document.createElement('div');
     meta.className = 'piece-meta';
@@ -93,10 +95,12 @@
     label.textContent = item.type === 'reel' ? 'Reel' : 'Video';
     const title = document.createElement('h3');
     title.textContent = item.title || 'Video';
-    meta.append(label, title);
-    button.appendChild(meta);
-    button.addEventListener('click', () => openVideo(item.url));
-    return button;
+    const hint = document.createElement('span');
+    hint.className = 'watch-hint';
+    hint.textContent = `${watchLabel(item.url)} ↗`;
+    meta.append(label, title, hint);
+    link.appendChild(meta);
+    return link;
   }
 
   function section(title, nodes) {
@@ -144,12 +148,13 @@
     root.append(eyebrow, title, intro);
 
     if (page.reel_url) {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'btn btn-primary';
-      button.textContent = 'Ver reel';
-      button.addEventListener('click', () => openVideo(page.reel_url));
-      root.appendChild(button);
+      const link = document.createElement('a');
+      link.className = 'btn btn-primary';
+      link.href = watchUrl(page.reel_url);
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = 'Ver reel';
+      root.appendChild(link);
     }
 
     if (page.layout === 'segment') {

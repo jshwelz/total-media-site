@@ -196,10 +196,20 @@ button.chip {
   cursor: default;
 }
 
-button.piece-card {
+button.piece-card,
+a.piece-card {
   cursor: pointer;
   font: inherit;
   width: 100%;
+  text-decoration: none;
+}
+
+.watch-hint {
+  display: inline-block;
+  margin-top: 0.55rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
 }
 
 .piece-card img {

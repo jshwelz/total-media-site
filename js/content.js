@@ -8,33 +8,31 @@
     return `${BASE}/${clean}`.replace(/([^:])\/{2,}/g, '$1/');
   }
 
-  function toEmbed(url) {
+  function watchUrl(url) {
     if (!url) return '';
     try {
       const parsed = new URL(url, window.location.href);
       const host = parsed.hostname.replace(/^www\./, '');
       if (host === 'youtu.be') {
         const id = parsed.pathname.split('/').filter(Boolean)[0];
-        return id ? `https://www.youtube.com/embed/${id}?autoplay=1&rel=0` : url;
+        return id ? `https://www.youtube.com/watch?v=${id}` : url;
       }
-      if (host === 'youtube.com' || host === 'm.youtube.com') {
-        if (parsed.pathname.startsWith('/embed/')) {
-          parsed.searchParams.set('autoplay', '1');
-          parsed.searchParams.set('rel', '0');
-          return parsed.toString();
-        }
-        const id = parsed.searchParams.get('v');
-        return id ? `https://www.youtube.com/embed/${id}?autoplay=1&rel=0` : url;
+      if (host === 'youtube.com' || host === 'm.youtube.com' || host === 'youtube-nocookie.com') {
+        const embedId = parsed.pathname.startsWith('/embed/') ? parsed.pathname.split('/').filter(Boolean)[1] : '';
+        const id = parsed.searchParams.get('v') || embedId;
+        return id ? `https://www.youtube.com/watch?v=${id}` : parsed.toString();
       }
-      if (host === 'vimeo.com') {
+      if (host === 'player.vimeo.com') {
         const id = parsed.pathname.split('/').filter(Boolean).pop();
-        return id ? `https://player.vimeo.com/video/${id}?autoplay=1` : url;
+        return id ? `https://vimeo.com/${id}` : url;
       }
-      if (host === 'player.vimeo.com') return url;
+      if (host === 'facebook.com' && parsed.pathname.startsWith('/plugins/video.php')) {
+        return parsed.searchParams.get('href') || url;
+      }
+      return parsed.toString();
     } catch (error) {
       return url;
     }
-    return url;
   }
 
   function applyHome(site) {
@@ -48,15 +46,17 @@
       window.TotalMedia = window.TotalMedia || {};
       if (/\.mp4($|\?)/i.test(showreel)) {
         const video = document.querySelector('#inicio video');
+        const src = mediaSrc(showreel);
+        window.TotalMedia.showreelUrl = src;
         if (video && !video.querySelector('source')) {
           const source = document.createElement('source');
-          source.src = mediaSrc(showreel);
+          source.src = src;
           source.type = 'video/mp4';
           video.appendChild(source);
           video.load();
         }
       } else {
-        window.TotalMedia.showreelEmbed = toEmbed(showreel);
+        window.TotalMedia.showreelUrl = watchUrl(showreel);
       }
     }
 
@@ -141,9 +141,13 @@
       grid.replaceChildren();
       if (empty) empty.hidden = visible.length > 0;
       visible.forEach((item) => {
-        const card = document.createElement(item.video_url ? 'button' : 'article');
+        const card = document.createElement(item.video_url ? 'a' : 'article');
         card.className = 'piece-card';
-        card.type = item.video_url ? 'button' : undefined;
+        if (item.video_url) {
+          card.href = watchUrl(item.video_url);
+          card.target = '_blank';
+          card.rel = 'noopener';
+        }
         const cover = item.cover || galleryImages(item)[0];
         if (cover) {
           const image = document.createElement('img');
@@ -160,16 +164,6 @@
         title.textContent = item.title || '';
         meta.append(label, title);
         card.appendChild(meta);
-        if (item.video_url) {
-          card.addEventListener('click', () => {
-            const frame = document.getElementById('reelFrame');
-            const modal = document.getElementById('reelModal');
-            if (!frame || !modal) return;
-            frame.src = toEmbed(item.video_url);
-            modal.classList.add('open');
-            modal.setAttribute('aria-hidden', 'false');
-          });
-        }
         grid.appendChild(card);
       });
     }
