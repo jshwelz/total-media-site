@@ -158,11 +158,15 @@ collections:
       - name: title
         label: Título
         widget: string
+      - name: card_title
+        label: Título de la tarjeta
+        widget: string
+        required: false
+        hint: Nombre corto en Corporativo o Sociales. Ejemplo Bodas.
       - name: summary
         label: Texto corto
         widget: text
         required: false
-        hint: Se usa en la tarjeta de la categoría dentro de Corporativo o Sociales.
       - name: intro
         label: Introducción
         widget: text
