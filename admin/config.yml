@@ -219,6 +219,10 @@ collections:
         label: YouTube
         widget: string
         required: false
+      - name: facebook
+        label: Facebook
+        widget: string
+        required: false
       - name: collaborators
         label: Colaboradores
         widget: list

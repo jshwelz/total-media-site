@@ -38,6 +38,11 @@
         "title": "Box 10 aniversario — video institucional",
         "url": "https://www.youtube.com/watch?v=vypf5h7E4Ys",
         "type": "largo"
+      },
+      {
+        "title": "Town Center — centro comercial",
+        "url": "https://www.facebook.com/reel/1912834819619181/",
+        "type": "reel"
       }
     ],
     "photos": [
@@ -291,6 +296,11 @@
         "title": "Boda Erlin y Joseline — mejores momentos",
         "url": "https://www.youtube.com/watch?v=4AmEh9iSjE8",
         "type": "largo"
+      },
+      {
+        "title": "Desfile 15 de septiembre",
+        "url": "https://www.facebook.com/reel/1558745182238964/",
+        "type": "reel"
       }
     ],
     "photos": [
@@ -344,6 +354,11 @@
       {
         "title": "Boda Johnny y Karla — baile",
         "url": "https://www.youtube.com/watch?v=CR6TG0PLU3g",
+        "type": "reel"
+      },
+      {
+        "title": "Boda civil y religiosa — Ever e Iris",
+        "url": "https://www.facebook.com/reel/847681157791487/",
         "type": "reel"
       }
     ],
@@ -564,17 +579,15 @@
     "group": "general",
     "eyebrow": "DETRÁS DE TOTAL MEDIA",
     "title": "Enrique Turcios",
-    "summary": "Historia, equipo y empresas hermanas.",
-    "intro": "Soy Enrique Turcios, fundador de Total Media, productor audiovisual y fotógrafo. He trabajado en video y fotografía para marcas, empresas y eventos, contando cada historia con una imagen clara y emocional.",
+    "summary": "Productora en San Pedro Sula.",
+    "intro": "Somos una productora de medios audiovisuales en San Pedro Sula, apasionada por la publicidad y por contar historias en video y fotografía. Total Media es el estudio de Enrique Turcios.",
     "reel_url": "",
     "videos": [],
-    "photos": [
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80"
-    ],
-    "phone": "",
-    "email": "",
-    "instagram": "https://www.instagram.com/",
-    "tiktok": "https://www.tiktok.com/",
+    "photos": [],
+    "phone": "50488053921",
+    "email": "totalmediapro1@gmail.com",
+    "instagram": "",
+    "tiktok": "",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [
       {
@@ -588,18 +601,8 @@
         "bio": "Corte, color y entrega de piezas largas y reels."
       }
     ],
-    "sisters": [
-      {
-        "name": "Empresa hermana 01",
-        "description": "Espacio de ejemplo para una marca relacionada. Cambia el nombre, el texto y el enlace desde el editor.",
-        "url": "https://totalmedia.pro"
-      },
-      {
-        "name": "Empresa hermana 02",
-        "description": "Segundo espacio de ejemplo para una empresa hermana.",
-        "url": "https://totalmedia.pro"
-      }
-    ]
+    "sisters": [],
+    "facebook": "https://www.facebook.com/totalmediapro"
   },
   {
     "slug": "marcas",
@@ -608,7 +611,7 @@
     "eyebrow": "CONFIANZA COMERCIAL",
     "title": "Marcas y empresas que han confiado en Total Media",
     "summary": "Logos y clientes corporativos.",
-    "intro": "Proyectos audiovisuales y fotográficos para empresas, marcas y organizaciones de distintos rubros. Los logos se editan en Inicio, dentro de Marcas.",
+    "intro": "Trabajo reciente publicado por Total Media Pro: Sazón Lo Nuestro, Truck Depot, Box, Nido de Águilas, Texaco, Coats y Town Center. Los logos se editan en Inicio, dentro de Marcas.",
     "reel_url": "",
     "videos": [],
     "photos": [],
@@ -627,16 +630,17 @@
     "eyebrow": "HABLEMOS",
     "title": "Hablemos de tu próximo proyecto",
     "summary": "WhatsApp, correo y formulario.",
-    "intro": "Si necesitas video o fotografía para tu marca, empresa o evento, escribe y te ayudamos a encontrar la opción.",
+    "intro": "Estamos en San Pedro Sula. Si necesitas video o fotografía para tu marca, empresa o evento, escribe por WhatsApp o correo.",
     "reel_url": "",
     "videos": [],
     "photos": [],
-    "phone": "50400000000",
-    "email": "hola@totalmedia.pro",
-    "instagram": "https://www.instagram.com/",
-    "tiktok": "https://www.tiktok.com/",
+    "phone": "50488053921",
+    "email": "totalmediapro1@gmail.com",
+    "instagram": "",
+    "tiktok": "",
     "youtube": "https://www.youtube.com/@TotalMediaPro",
     "collaborators": [],
-    "sisters": []
+    "sisters": [],
+    "facebook": "https://www.facebook.com/totalmediapro"
   }
 ]

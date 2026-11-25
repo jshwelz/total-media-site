@@ -33,6 +33,9 @@
         const id = parsed.pathname.split('/').filter(Boolean).pop();
         return id ? `https://player.vimeo.com/video/${id}?autoplay=1` : url;
       }
+      if (host === 'facebook.com' || host === 'fb.watch') {
+        return `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(parsed.href)}&show_text=false&width=1280`;
+      }
     } catch (error) {
       return url;
     }
@@ -282,7 +285,7 @@
         whatsapp.textContent = 'WhatsApp';
         links.appendChild(whatsapp);
       }
-      [['Correo', page.email, page.email && `mailto:${page.email}`], ['Instagram', 'Instagram', page.instagram], ['TikTok', 'TikTok', page.tiktok], ['YouTube', 'YouTube', page.youtube]].forEach(([label, text, href]) => {
+      [['Correo', page.email, page.email && `mailto:${page.email}`], ['Instagram', 'Instagram', page.instagram], ['TikTok', 'TikTok', page.tiktok], ['YouTube', 'YouTube', page.youtube], ['Facebook', 'Facebook', page.facebook]].forEach(([label, text, href]) => {
         if (!href) return;
         const link = document.createElement('a');
         link.href = href;
